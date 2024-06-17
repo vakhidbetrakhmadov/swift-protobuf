@@ -185,6 +185,7 @@ fileprivate func analyze(descriptor: Descriptor) -> AnalyzeResult {
 enum MessageStorageDecision {
   /// Compute if a message should use heap based sortage or not.
   static func shouldUseHeapStorage(descriptor: Descriptor) -> Bool {
-    return analyze(descriptor: descriptor).usesStorage
+    // return analyze(descriptor: descriptor).usesStorage
+    return true
   }
 }
